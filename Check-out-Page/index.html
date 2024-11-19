@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="checkout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.js"></script>
+
+    <title>Check-Out</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- header starts  -->
+      <header>
+        <h1>LOGO</h1>
+        <div class="checkout-step">
+          <div class="step cart">
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
+            <h2>Cart</h2>
+          </div>
+          <div class="step review">
+            <span class="icon">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <h2>Review</h2>
+          </div>
+          <div class="step cart">
+            <span class="icon"><i class="fa-solid fa-check"></i></span>
+            <h2>CheckOut</h2>
+          </div>
+        </div>
+      </header>
+      <!-- header ends  -->
+
+      <!-- main vontent starts  -->
+      <main class="main-content">
+        <!-- checkout section starts -->
+        <section class="checkout-section">
+          <h2>Checkout</h2>
+          <div class="checkout-form">
+            <div class="delivery-type">
+              <div class="shipping info">
+                <h3>Shipping Information</h3>
+              </div>
+              <div class="btn-container">
+                <button class="delivery-btn">
+                  <span class="icon"><i class="fa-solid fa-truck"></i></span>
+                  Delivery
+                </button>
+                <button class="pickup-btn">
+                  <span class="icon"
+                    ><i class="fa-solid fa-box-open"></i>
+                  </span>
+                  Pick up
+                </button>
+              </div>
+            </div>
+            <!-- check out form starts -->
+            <form>
+              <div class="input-box">
+                <label for="full-name">Full name</label>
+                <input
+                  placeholder="Enter full name"
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  required
+                />
+                <div class="error"></div>
+              </div>
+              <div class="input-box">
+                <label for="Email">Email address</label>
+                <input
+                  placeholder="Enter email address"
+                  type="text"
+                  id="email"
+                  name="Email"
+                  required
+                />
+                <div class="error"></div>
+              </div>
+              <div class="input-box">
+                <label for="number">Phone number</label>
+                <input
+                  placeholder="Enter PhoneNumber"
+                  type="number"
+                  id="PhoneNumber"
+                  name="number"
+                  required
+                />
+                <div class="error"></div>
+              </div>
+              <div class="input-box">
+                <label for="country">Country</label>
+                <select>
+                  <option selected value="1">Nigeria</option>
+                  <option value="2">Canada</option>
+                  <option value="3">United Kingdom</option>
+                  <option value="4">United States</option>
+                  <option value="5">Australia</option>
+                  <option value="6">Germany</option>
+                  <option value="7">India</option>
+                  <option value="8">South Africa</option>
+                  <option value="9">Brazil</option>
+                  <option value="10">Mexico</option>
+                  <option value="11">France</option>
+                </select>
+              </div>
+              <div class="input-box threeway">
+                <div class="input-box way">
+                  <label for="city">City</label>
+                  <input
+                    placeholder="Enter city"
+                    type="text"
+                    id="city"
+                    name="city"
+                    required
+                  />
+                  <div class="error"></div>
+                </div>
+                <div class="input-box way">
+                  <label for="state">State</label>
+                  <input
+                    placeholder="Enter state"
+                    type="text"
+                    id="state"
+                    name="state"
+                    required
+                  />
+                  <div class="error"></div>
+                </div>
+                <div class="input-box way">
+                  <label for="Zip-code">Zip Code</label>
+                  <input
+                    placeholder="Enter ZIP code"
+                    type="text"
+                    id="ZIP"
+                    name="zip-code"
+                    required
+                  />
+                  <div class="error"></div>
+                </div>
+              </div>
+              <div class="TandC">
+                <input name="tandc" type="checkbox" required />
+                <label for="tandc">
+                  I have read and agree to the Terms and Conditions</label
+                >
+              </div>
+            </form>
+            <!-- checkout form ends -->
+          </div>
+        </section>
+        <!-- check out section ends -->
+
+        <!-- product info section starts -->
+        <section class="product-info-section">
+          <!-- cart descriptin start -->
+          <div class="cart-review">
+            <h2>Review your cart</h2>
+            <div class="cart-item">
+              <div class="cart-img">
+                <img src="../images/image-product-1-thumbnail.jpg" alt="item" />
+              </div>
+              <div class="cart-description">
+                <div class="cart-description-header">
+                  <h2>DuCmfort</h2>
+                  <small>1x</small>
+                </div>
+                <h3 class="cart-price">$20.00</h3>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="cart-img">
+                <img src="../images/image-product-2-thumbnail.jpg" alt="item" />
+              </div>
+              <div class="cart-description">
+                <div class="cart-description-header">
+                  <h2>IroIne Desk</h2>
+                  <small>1x</small>
+                </div>
+                <h3 class="cart-price">$25.00</h3>
+              </div>
+            </div>
+          </div>
+          <!-- cart descriptin ends -->
+          <!-- payment confirmation starts -->
+          <div class="payment-confirmation">
+            <div class="payment-description">
+              <div class="discount-code">
+                <input type="text" name="discount" />
+                <button class="apy-btn">Apply</button>
+              </div>
+              <!-- payment-list starts -->
+              <div class="payment-list">
+                <div class="cash">
+                  <h2>Subtotal</h2>
+                  <h3 class="Subtotal-amount">$45.00</h3>
+                </div>
+                <div class="cash">
+                  <h2>Shipping</h2>
+                  <h3 class="shipping-amount">$5.00</h3>
+                </div>
+                <div class="cash">
+                  <h2>Discount</h2>
+                  <h3 class="discount-amount">-$10.00</h3>
+                </div>
+                <div class="cash">
+                  <h2>Total</h2>
+                  <h3 class="Total-amount">$40.00</h3>
+                </div>
+              </div>
+
+              <button class="btn-pay">Pay Now</button>
+              <!-- payment-list ends -->
+            </div>
+
+            <div class="end-footer">
+              <div class="footer-head">
+                <h2>
+                  <i class="fa-solid fa-lock"></i> Secure Checout -SSL Encrypted
+                </h2>
+              </div>
+              <p>
+                Ensuring your finanicial and personal details are severe during
+                every transction
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- product info section ends -->
+      </main>
+      <!-- main content ends -->
+    </div>
+
+    <!-- payment confiremed page -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-content-header">
+          <span class="close-btn">&times</span>
+          <h2>Payment Confirmed</h2>
+          <img src="./assets/checkmark.png" alt="checkbox" />
+          <p>Your payment has been processed successfully!</p>
+        </div>
+        <div class="modal-info">
+          <h3>Order Summary</h3>
+          <p>Product: <span id="product-name">DuCmfort</span></p>
+          <p>Quantity: <span id="product-quantity">2</span></p>
+          <p>Total Amount: <span id="total-amount">$40.00</span></p>
+        </div>
+
+        <!-- deleivery payment confirmed summary -->
+        <div class="modal-delivery-info">
+          <h3>Delivery Summary</h3>
+          <p>
+            Full Name:
+            <span class="payment-order-name"></span>
+          </p>
+          <p>
+            Delivery Address:
+            <span class="payment-order-address"></span>
+          </p>
+          <p>City: <span class="payment-order-city">Lagos</span></p>
+          <p>
+            Delivery Instructions:
+            <span class="payment-order-instruction"> </span>
+          </p>
+        </div>
+        <!-- delivery payment confirmed summary ends -->
+
+        <div class="modal-pickup-info">
+          <h3>PickUp Summary</h3>
+          <p>
+            Full Name:
+            <span class="payment-order-name"></span>
+          </p>
+          <p>
+            Pickup Location:
+            <span class="payment-order-address"></span>
+          </p>
+          <p>Alternate Contact: <span class="payment-order-contacts"></span></p>
+          <p>
+            Pickup Instructions:
+            <span class="payment-order-instruction"> </span>
+          </p>
+        </div>
+        <button class="confirm-btn">Close</button>
+      </div>
+    </div>
+    <!-- payment confiremd end -->
+
+    <!-- delivery otpiton start -->
+    <div id="deliveryModal" class="modal">
+      <div class="modal-content">
+        <div class="deliveryModal-header">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>Enter Delivery Information</h2>
+          <img src="./assets/delivery.png" alt="delveiry" />
+        </div>
+        <!-- Delivery Form -->
+        <form class="deliveryForm">
+          <div class="deliveryInputBox">
+            <label for="fullName">Full Name:</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Your full name"
+              required
+            />
+          </div>
+
+          <div class="deliveryInputBox">
+            <label for="address">Delivery Address:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Your delivery address"
+              required
+            />
+          </div>
+
+          <div class="deliveryInputBox">
+            <label for="city">City:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Your city"
+              required
+            />
+          </div>
+
+          <div class="deliveryInputBox">
+            <label for="postalCode">Postal Code:</label>
+            <input
+              type="text"
+              id="postalCode"
+              name="postalCode"
+              placeholder="Your postal code"
+              required
+            />
+          </div>
+
+          <div class="deliveryInputBox textA">
+            <label for="deliveryInstructions"
+              >Special Delivery Instructions:</label
+            >
+            <textarea
+              id="deliveryInstructions"
+              name="deliveryInstructions"
+              placeholder="Any special instructions (optional)"
+            ></textarea>
+          </div>
+
+          <button class="save-delivery-btn" type="submit">
+            Save Delivery Info
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- delveriy op[tion end] -->
+
+    <!-- pickup option start -->
+    <div class="pickup-modal">
+      <div class="modal-content">
+        <div class="deliveryModal-header">
+          <span id="closeModal" class="close closepic">&times;</span>
+          <h2>Enter Pickup Details</h2>
+          <img src="./assets/pickup2.png" alt="delveiry" />
+        </div>
+
+        <form class="deliveryForm pickupform">
+          <div class="deliveryInputBox">
+            <label for="fullName">Full Name:</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Your full name"
+              required
+            />
+          </div>
+
+          <!-- Pickup Code -->
+          <div class="deliveryInputBox">
+            <label for="pickupCode">Pickup Code:</label>
+            <input
+              type="text"
+              id="pickupCode"
+              name="pickupCode"
+              placeholder="Your pickup code or order number"
+              required
+            />
+          </div>
+
+          <!-- Pickup Location -->
+          <div class="deliveryInputBox">
+            <label for="pickupLocation">Pickup Location:</label>
+            <input
+              type="text"
+              id="pickupLocation"
+              name="address"
+              placeholder="Pickup location (e.g., Main Store)"
+              required
+            />
+          </div>
+
+          <!-- Alternate Contact -->
+          <div class="deliveryInputBox">
+            <label for="alternateContact">Alternate Contact (Optional):</label>
+            <input
+              type="number"
+              id="alternateContact"
+              name="alternateContact"
+              placeholder="Name of alternate contact (if any)"
+            />
+          </div>
+
+          <!-- Instructions for Pickup -->
+          <div class="deliveryInputBox">
+            <label for="pickupInstructions">Instructions for Pickup:</label>
+            <textarea
+              id="pickupInstructions"
+              name="pickupInstructions"
+              placeholder="Any special instructions for pickup"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="pickup-submit">
+            Confirm Pickup Details
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- pickup option end  -->
+    <script lang="javascript" src="checkout.js"></script>
+  </body>
+</html>
